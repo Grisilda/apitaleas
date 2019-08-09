@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Main {
 	 @RequestMapping("/")
 	    public String taleas(){
-	        return "Goodmorning Taleas";
+	        return "Finally working! Can I sleep now?";
 	    }
 }
