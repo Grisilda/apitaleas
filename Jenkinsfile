@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checkout-ing project'
-                git 'https://github.com/sindi12/api.git'
+                git 'https://github.com/Grisilda/apitaleas.git'
                 echo 'Checkout Success!'
             }
         }
@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Run Container') {
             steps {              
-                sh 'docker run -d -p 8090:8080 --name demoServer api_gateway_image'           
+                sh 'docker run -d -p 8070:8080 --name demoServer api_gateway_image'           
             }
         }
     }
